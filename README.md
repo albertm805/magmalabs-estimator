@@ -12,6 +12,18 @@ You need to install the dependencies specified in your Gemfile, you do this with
 
     $ bundle install
 
+## Create the database
+
+Create the database with the following command:
+
+    $ rake db:create
+
+## Setup the tables in the database
+
+You need to setup the migrations with the next command:
+
+    $ rake db:migrate
+
 ## Initialize your server
 
     $ rails s
