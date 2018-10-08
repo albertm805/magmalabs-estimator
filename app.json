@@ -2,7 +2,7 @@
   "name": "magmalabs-estimator",
   "description": "An eCommerce that sells eCommerce",
   "scripts": {
-    "postdeploy": "heroku run rails db:migrate"
+    "postdeploy": "bundle exec db:migrate"
   },
   "env": {
     "LANG": {
