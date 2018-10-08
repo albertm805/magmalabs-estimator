@@ -2,7 +2,7 @@
   "name": "magmalabs-estimator",
   "description": "An eCommerce that sells eCommerce",
   "scripts": {
-    "postdeploy": "bundle exec rake db:schema:load && db:seed"
+    "postdeploy": "bundle exec rake db:schema:load  && bundle exec db:seed"
   },
   "env": {
     "LANG": {
