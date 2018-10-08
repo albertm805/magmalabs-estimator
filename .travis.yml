@@ -6,5 +6,7 @@ script:
   - bundle exec rspec
 
 notifications:
+  slack: false
   email: false
+  
   
