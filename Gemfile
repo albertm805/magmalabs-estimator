@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'solidus'
 gem 'solidus_auth_devise'
 
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
