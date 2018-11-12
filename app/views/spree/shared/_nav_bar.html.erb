@@ -1,0 +1,18 @@
+<nav id="top-nav-bar" class="columns ten">
+  <ul id="nav-bar" class="inline" data-hook>
+  	<li id="home-link" data-hook><%= link_to t('spree.home |'), spree.root_path %></li>
+  	<li id="category-page" data-hook><%= link_to t('spree.category_page |'), spree.nested_taxons_path('categories') %></li>
+  	<li id="product-page" data-hook><%= link_to t('spree.product_page |'), spree.products_path %></li>
+    <%= render 'spree/shared/locale_selector' %>
+    <%= render 'spree/shared/login_bar_items' %>
+  </ul>
+    <ul>  
+      <li id="link-to-cart" data-hook>
+        <noscript>
+      	  <%= link_to t('spree.cart'), spree.cart_path %>
+      	</noscript>
+      	&nbsp;
+      </li>
+	</ul>
+    <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
+  </nav>
